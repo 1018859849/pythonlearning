@@ -4,8 +4,8 @@ from json import JSONDecoder
 import simplejson
 import requests
 
-key="oJAdSkbO1z-1fS0CXR98q-1R5t6SgP7g"
-secret="s5BR5q-l4P7yjMXThBhnwc48M1lgNLse"
+key="mykey"
+secret="mysecret"
 
 def find_face(imgpath):
     print("finding")
@@ -23,7 +23,7 @@ def find_face(imgpath):
     list0=faces[0]
     rectangle=list0['face_rectangle']
     return rectangle
-
+#模板图片地址 合成图片地址 生成图片地址 合成指数0-100
 def add_face(image_url_1,image_url_2,image_url,number):
     ff1=find_face(image_url_1)
     ff2=find_face(image_url_2)
